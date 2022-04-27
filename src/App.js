@@ -7,8 +7,6 @@ function App() {
     <div className="App">
       <Navbar />
       <Card />
-      <hr></hr>
-      <hr></hr>
     </div>
   );
 }
