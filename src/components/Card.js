@@ -15,7 +15,6 @@ export default function Card() {
           <p className='card--date'>August 2018</p>
           <p className='card--paragraph'>Nara Park (奈良公園, Nara Kōen) is a public park located in the city of Nara, Japan, at the foot of Mount Wakakusa. Established in 1880 it is one of the oldest parks in Japan. According to local folklore, shika deer from this area were considered sacred due to a visit from Takemikazuchi, one of the four gods of Kasuga Shrine.</p>
         </div>
-      <br></br>
       </div>
     </div>
   )

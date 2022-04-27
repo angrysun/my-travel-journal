@@ -49,7 +49,8 @@
 .card--details {
   margin-left: 20px;
   margin-right: 40px;
-  margin-top: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-size: 14px;
 }
 
@@ -88,6 +89,10 @@
 
 .card--paragraph {
   line-height: 150%;
+}
+
+.solid {
+  border-top: 3px solid #bbb;
 }
 
 @media screen and (max-width: 576px) {
