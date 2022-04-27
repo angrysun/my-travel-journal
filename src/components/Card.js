@@ -1,7 +1,9 @@
+import Nara from '../images/Nara.JPG'
+
 export default function Card() {
   return (
     <div className="card">
-      <h1>hi</h1>
+      <img src={Nara} alt="Nara" className="card--image" />
     </div>
   )
 }
