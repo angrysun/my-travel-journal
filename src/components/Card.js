@@ -5,7 +5,7 @@ export default function Card() {
     <div className='card--container'>
       <div className="card">
         <div className='card--image-container'>
-          <img src={Nara} alt="Nara" className="card--image" />
+          {/* <img src={coverImg} alt="Nara" className="card--image" /> */}
         </div>
         <div className='card--details'>
           <a href="#" target="_blank" rel="noreferrer" id="location-icon"><i class="fa-solid fa-location-dot"></i></a>
