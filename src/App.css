@@ -1,3 +1,10 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
 .navbar {
   background-color: #f55a5a;
   padding: 4px;
@@ -5,6 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* width: 100vw; */
 }
 
 .nav--title {
@@ -21,19 +29,28 @@
 .card {
   display: flex;
   margin-left: 40px;
-  margin-top: 100px;
+  margin-top: 50px;
+  justify-content: center;
+  /* align-items: baseline; */
 }
 
+/* .card--image-container {
+  margin: 0;
+  padding: 0;
+} */
+
 .card--image {
-  width: 28vh;
-  height: 40vh;
-  border-radius: 4px;
+  width: 28vw;
+  height: 100%;
+  border-radius: 8px;
   object-fit: cover;
 }
 
 .card--details {
   margin-left: 20px;
   margin-right: 40px;
+  margin-top: 40px;
+  font-size: 14px;
 }
 
 #location-icon {
@@ -60,15 +77,45 @@
 }
 
 .card--title {
-  line-height: 30px;
-  padding-top: ;
+  line-height: 36px;
+  margin-top: 12px;
 }
 
 .card--date {
-
   font-weight: 700;
+  margin-top: 24px;
 }
 
 .card--paragraph {
   line-height: 150%;
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .card--image {
+    width: 90vw;
+    height: 100%;
+  }
+
+  .card--details {
+    margin: 0;
+    margin-top: 20px;
+    width: 90vw;
+  }
+
+  .card--date {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .card--image {
+    width: 38vw;
+    height: 100%;
+  }
 }
