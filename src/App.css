@@ -25,8 +25,50 @@
 }
 
 .card--image {
-  width: 30vh;
-  height: 45vh;
+  width: 28vh;
+  height: 40vh;
   border-radius: 4px;
   object-fit: cover;
+}
+
+.card--details {
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+#location-icon {
+  color: #f55a5a;
+  margin-right: 4px;
+}
+
+.location--title {
+  color: black;
+  letter-spacing: 0.10em;
+}
+
+.location--title:hover {
+  color: #918e9b;
+}
+
+.location--maps {
+  color: #918e9b;
+  margin-left: 12px;
+}
+
+.location--maps:hover {
+  text-decoration: underline;
+}
+
+.card--title {
+  line-height: 30px;
+  padding-top: ;
+}
+
+.card--date {
+
+  font-weight: 700;
+}
+
+.card--paragraph {
+  line-height: 150%;
 }
