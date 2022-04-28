@@ -75,12 +75,14 @@
 
 .card--title {
   line-height: 36px;
-  margin-top: 12px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 25px;
 }
 
 .card--date {
   font-weight: 700;
-  margin-top: 24px;
 }
 
 .card--paragraph {
@@ -88,7 +90,8 @@
 }
 
 .solid {
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-top: 1px solid #f5f5f5;
   width: 93vw;
 }
@@ -114,11 +117,6 @@
     margin: 0;
     margin-top: 8px;
     width: 90vw;
-  }
-
-  .card--title {
-    margin-top: 4px;
-    margin-bottom: 8px;
   }
 
   .card--date {
