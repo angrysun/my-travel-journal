@@ -1,5 +1,6 @@
 :root {
   --bg-color: #f5f5f5;
+  --nav-bg-color: #f45b5a;
   --text-color: #000;
   --image-grayscale: 0;
   --image-opacity: 100%;
@@ -7,6 +8,7 @@
 
 [data-theme="dark"] {
   --bg-color: #212833;
+  --nav-bg-color: #cd7fbb;
   --text-color: #fff;
   --image-grayscale: 10%;
   --image-opacity: 90%;
@@ -26,7 +28,7 @@ video {
 }
 
 .navbar {
-  background-color: #f55a5a;
+  background-color: var(--nav-bg-color);
   padding: 4px;
   color: white;
   display: flex;
@@ -68,12 +70,12 @@ video {
 }
 
 #location-icon {
-  color: #f55a5a;
+  color: var(--nav-bg-color);
   margin-right: 6px;
 }
 
 .location--title {
-  color: black;
+  color: var(--text-color);
   letter-spacing: 0.10em;
 }
 
@@ -96,7 +98,6 @@ video {
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 25px;
-  color: --text-color;
 }
 
 .card--date {
