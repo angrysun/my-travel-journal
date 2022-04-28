@@ -29,7 +29,6 @@ video {
 
 .navbar {
   background-color: var(--nav-bg-color);
-  padding: 4px;
   color: white;
   display: flex;
   justify-content: center;
