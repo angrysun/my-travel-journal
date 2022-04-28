@@ -1,12 +1,12 @@
 const data = [
   {
     id: 1,
-    coverImg: "Nakameguro.jpg",
-    mapsLink: "https://goo.gl/maps/H31betmsgXGfMFAh9",
-    prefecture: "TOKYO",
-    placeLocation: "Meguro River",
-    date: "April 2021",
-    paragraphContent: "The Meguro River is 7.82 km (4.86 mi) in length and passes through Setagaya, Meguro and Shinagawa wards of Tokyo. The river banks are extensively landscaped and act as an urban green space for communities along its length. The river is a popular venue for cherry blossom viewing in the spring."
+    coverImg: "Hakodate.jpg",
+    mapsLink: "https://goo.gl/maps/E38w1EPD81QCk2Gt8",
+    prefecture: "HOKKAIDO",
+    placeLocation: "Hakodate",
+    date: "March 2015",
+    paragraphContent: "Hakodate is port and third biggest city in Hokkaido. Hakodate was Japan's first city whose port was opened to foreign trade in 1854, as a result of Convention of Kanagawa, and used to be the most important port in northern Japan. Hakodate has a distinct cityscape that is best viewed from the top of Mount Hakodate."
   },
   {
     id: 2,
