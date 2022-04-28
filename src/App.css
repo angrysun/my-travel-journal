@@ -1,7 +1,28 @@
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #000;
+  --image-grayscale: 0;
+  --image-opacity: 100%;
+}
+
+[data-theme="dark"] {
+  --bg-color: #212833;
+  --text-color: #fff;
+  --image-grayscale: 10%;
+  --image-opacity: 90%;
+}
+
+img,
+video {
+  filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
+}
+
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .navbar {
@@ -11,7 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .nav--title {
@@ -75,6 +96,7 @@
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 25px;
+  color: --text-color;
 }
 
 .card--date {
@@ -92,11 +114,108 @@
   width: 93vw;
 }
 
-@media screen and (max-width: 576px) {
-  .navbar {
-    margin-bottom: 20px;
-  }
+.toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.wrg-toggle {
+  touch-action: pan-x;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrg-toggle-input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.wrg-toggle-check,
+.wrg-toggle-uncheck {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 0;
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+
+.wrg-toggle-check {
+  left: 8px;
+}
+
+.wrg-toggle-uncheck {
+  opacity: 1;
+  right: 10px;
+}
+
+.wrg-toggle-uncheck span,
+.wrg-toggle-check span {
+  align-items: center;
+  display: flex;
+  height: 10px;
+  justify-content: center;
+  position: relative;
+  width: 10px;
+}
+
+.wrg-toggle-container {
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  border-radius: 30px;
+  background-color: #4d4d4d;
+  transition: all .2s ease;
+}
+
+.wrg-toggle-circle {
+  transition: all .5s cubic-bezier(.23, 1, .32, 1) 0ms;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #4d4d4d;
+  border-radius: 50%;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  transition: all .25s ease;
+}
+
+.wrg-toggle--checked .wrg-toggle-check {
+  opacity: 1;
+}
+
+.wrg-toggle--checked .wrg-toggle-uncheck {
+  opacity: 0;
+}
+
+.wrg-toggle--checked .wrg-toggle-circle {
+  left: 27px;
+}
+
+@media screen and (max-width: 576px) {
   .card {
     flex-direction: column;
     align-items: center;

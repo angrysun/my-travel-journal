@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Card from './components/Card';
 import data from './data';
 import ToggleButton from './components/ToggleButton';
+import { useState, useEffect } from 'react';
 
 let Checked = () => <>🌙</>;
 let Unchecked = () => <>🔆</>;
