@@ -3,7 +3,7 @@ export default function Card(props) {
     <div className='card--container'>
       <div className="card">
         <div className='card--image-container'>
-          <img src={`../images/${props.item.coverImg}`} alt="Nara" className="card--image" />
+          <img src={`../images/${props.item.coverImg}`} alt={props.item.placeLocation} className="card--image" />
         </div>
         <div className='card--details'>
           <a href={props.item.mapsLink} target="_blank" rel="noreferrer" id="location-icon"><i class="fa-solid fa-location-dot"></i></a>

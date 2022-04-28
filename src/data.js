@@ -10,7 +10,7 @@ const data = [
   },
   {
     id: 2,
-    coverImg: "Nara.jpg",
+    coverImg: "Deer.jpg",
     mapsLink: "https://goo.gl/maps/NQE9Csds7ituyiDP8",
     prefecture: "NARA",
     placeLocation: "Nara Park",
