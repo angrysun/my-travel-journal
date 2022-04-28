@@ -31,10 +31,6 @@
   justify-content: center;
 }
 
-/* .card--image-container {
-  flex: 0 0 auto;
-} */
-
 .card--image {
   width: 225px;
   height: 269px;
@@ -52,7 +48,7 @@
 
 #location-icon {
   color: #f55a5a;
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
 .location--title {

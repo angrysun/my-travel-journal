@@ -9,8 +9,8 @@ function App() {
       key={item.id}
       item={item}
     />
-
   })
+
   return (
     <div className="App">
       <Navbar />
