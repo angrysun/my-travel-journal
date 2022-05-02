@@ -101,7 +101,7 @@ video {
 .card--title {
   line-height: 36px;
   margin-top: 4px;
-  margin-bottom: 4px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 27.65px;
 }
@@ -114,6 +114,7 @@ video {
 
 .card--paragraph {
   line-height: 150%;
+  margin-top: 8px;
 }
 
 .solid {
