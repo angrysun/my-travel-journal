@@ -2,6 +2,8 @@
   --bg-color: #f5f5f5;
   --nav-bg-color: #f45b5a;
   --text-color: #000;
+  --text-sub-color: #333;
+  --border: 1px solid #f5f5f5;
   --image-grayscale: 0;
   --image-opacity: 100%;
 }
@@ -10,6 +12,8 @@
   --bg-color: #212833;
   --nav-bg-color: #cd7fbb;
   --text-color: #fff;
+  --text-sub-color: #ddd;
+  --border: 1px solid #212833
   --image-grayscale: 10%;
   --image-opacity: 90%;
 }
@@ -97,13 +101,15 @@ video {
 .card--title {
   line-height: 36px;
   margin-top: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 27.65px;
 }
 
 .card--date {
   font-weight: 700;
+  color: var(--text-sub-color);
+  margin: 0;
 }
 
 .card--paragraph {
@@ -113,7 +119,7 @@ video {
 .solid {
   margin-top: 20px;
   margin-bottom: 20px;
-  border-top: 1px solid #f5f5f5;
+  border-top: var(--border);
   width: 95%;
 }
 
@@ -235,10 +241,6 @@ video {
     margin: 0;
     margin-top: 8px;
     width: 80vw;
-  }
-
-  .card--date {
-    margin-top: 12px;
   }
 
   .solid {
